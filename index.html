@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=26" />
   </head>
   <body class="home">
     <div class="page-shell">
@@ -48,12 +48,12 @@
             <nav class="site-nav" id="site-nav" aria-label="Main navigation">
               <a href="index.html">Home</a>
               <a href="team.html">Team</a>
-              <a class="mobile-login-link" href="login.html">Dashboard Login</a>
+              <a class="mobile-login-link" href="https://dashboard.meteoracapital.dev">Dashboard Login</a>
             </nav>
 
             <a
               class="header-cta"
-              href="login.html"
+              href="https://dashboard.meteoracapital.dev"
             >
               Dashboard Login
             </a>
@@ -72,18 +72,36 @@
               </h1>
               <p class="lede">
                 Meteora was formed in 2021 as an investment adviser specializing in event-driven equity
-                and credit strategies. We generate compelling risk-adjusted returns for its institutional
-                clientele by employing a disciplined, systematic approach to event-driven investments,
-                while aligning our interests with clients by investing significant internal capital alongside
-                them. We also provide customized structured equity and credit investments to companies
-                interested in solutions tailored to their financing needs.
+                and credit strategies. We generate compelling risk-adjusted returns for institutional
+                clientele by employing a disciplined, systematic approach to event-driven investments.
               </p>
             </div>
 
           </div>
         </section>
 
-        <section class="mission-recognition section-surface-alt">
+        <section class="pillars" aria-label="Meteora at a glance">
+          <div class="container pillar-grid">
+            <article class="pillar-card">
+              <p class="pillar-stat">2021</p>
+              <p>Founded by Vik Mittal</p>
+            </article>
+            <article class="pillar-card">
+              <p class="pillar-stat">$1.5B</p>
+              <p>Investment Capital</p>
+            </article>
+            <article class="pillar-card">
+              <p class="pillar-stat">Top 10</p>
+              <p>BarclayHedge Performance Ranking</p>
+            </article>
+            <article class="pillar-card">
+              <p class="pillar-stat">3 Yrs</p>
+              <p>Top-Performing Event-Driven Hedge Fund by Annualized Returns</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="mission-recognition section-surface-alt" id="mission">
           <div class="container mission-recognition-layout">
             <div class="mission-copy">
               <p class="eyebrow">Our mission</p>
@@ -95,45 +113,35 @@
                 both public and private investment opportunities.
               </h2>
             </div>
-
-            <div class="recognition-stack" aria-label="Fund recognitions">
-              <article class="award-banner award-brand-panel" aria-label="Meteora Select Trade Opportunities LP, BarclayHedge Top 10">
-                <p class="award-fund-name">Meteora Select Trade<br />Opportunities LP</p>
-                <div class="award-brand-bottom">
-                  <p class="barclayhedge-wordmark"><span>Barclay</span><span>Hedge</span></p>
-                  <div class="award-medallion" aria-label="Top 10">
-                    <span>Top 10</span>
-                  </div>
-                </div>
-              </article>
-
-              <article class="award-banner award-details-panel" aria-label="Top performing event-driven hedge fund">
-                <h2>Top Performing Hedge Fund</h2>
-                <p class="award-category">Event Driven - Past Three Years</p>
-                <p class="award-ranked">Ranked By</p>
-                <p>Compound Annual Return</p>
-                <p>3 Years Ending Jun. 2025</p>
-              </article>
-            </div>
           </div>
         </section>
 
         <section class="name-origin" aria-labelledby="name-origin-heading">
           <div class="container name-origin-layout">
-            <div class="name-origin-title">
-              <p class="eyebrow">What&rsquo;s in a name?</p>
-              <h2 id="name-origin-heading">Meteora <span>[Me&bull;te&bull;o&bull;ra]</span></h2>
-              <p>Proper Noun</p>
+            <div class="name-origin-word">
+              <p class="name-origin-label">What&rsquo;s in a name?</p>
+              <h2 class="name-origin-heading" id="name-origin-heading">Meteora</h2>
+              <p class="name-origin-say">
+                <span>me&middot;te&middot;o&middot;ra</span>
+                <span class="name-origin-type">proper noun</span>
+              </p>
             </div>
 
-            <div class="name-origin-copy">
-              <p>
-                We are often asked where the name &ldquo;Meteora&rdquo; comes from. Literally translated
-                as &ldquo;middle of the sky,&rdquo; &ldquo;suspended in the air,&rdquo; or &ldquo;in the heavens above,&rdquo;
-                Meteora is a place on the plain of Thessaly in northern Greece where one of the
-                largest and most precipitously built complexes of Eastern Orthodox monasteries in
-                Greece stands.
-              </p>
+            <div class="name-origin-meaning">
+              <p class="name-origin-label">Literally translated as</p>
+              <ol class="name-origin-list">
+                <li><span class="name-origin-num">01</span><span>&ldquo;middle of the sky&rdquo;</span></li>
+                <li><span class="name-origin-num">02</span><span>&ldquo;suspended in the air&rdquo;</span></li>
+                <li><span class="name-origin-num">03</span><span>&ldquo;in the heavens above&rdquo;</span></li>
+              </ol>
+
+              <div class="name-origin-place">
+                <p class="name-origin-label">The place</p>
+                <p>
+                  A place on the plain of Thessaly in northern Greece, where one of the largest and most
+                  precipitously built complexes of Eastern Orthodox monasteries in Greece stands.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -142,31 +150,51 @@
 
       <footer class="site-footer" id="contact">
         <div class="container footer-inner">
-          <div class="footer-location">
-            <p class="footer-heading">Boca Raton</p>
-            <p>1200 N. Federal Hwy</p>
-            <p>Suite 200</p>
-            <p>Boca Raton, FL 33432</p>
+          <a class="footer-brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="footer-brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt=""
+            />
+            <span class="footer-brand-text">
+              <span class="footer-brand-name">Meteora</span>
+              <span class="footer-brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="footer-columns">
+            <div class="footer-col">
+              <p class="footer-heading">Office</p>
+              <address>
+                1200 N. Federal Hwy<br />
+                Suite 200<br />
+                Boca Raton, FL 33432
+              </address>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-heading">Contact</p>
+              <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
+              <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
+              <a href="tel:201-906-0527">201-906-0527</a>
+            </div>
+
+            <nav class="footer-col" aria-label="Footer">
+              <p class="footer-heading">Explore</p>
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="https://dashboard.meteoracapital.dev">Dashboard Login</a>
+            </nav>
           </div>
 
-          <div class="footer-contact">
-            <p class="footer-heading">Contact</p>
-            <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
-            <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
-            <a href="tel:201-906-0527">201-906-0527</a>
-          </div>
-
-          <div class="footer-home">
-            <a href="index.html">Home</a>
-          </div>
-
-          <div class="footer-meta">
-            <p>© <span id="year"></span> Meteora Capital, LLC</p>
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Meteora Capital, LLC</p>
+            <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>

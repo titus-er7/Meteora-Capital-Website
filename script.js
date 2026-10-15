@@ -31,3 +31,28 @@ if (navToggle && siteNav) {
     });
   });
 }
+
+const siteHeader = document.querySelector('.site-header');
+
+if (siteHeader) {
+  // The bar stays visible for the first stretch of scrolling, then slides away
+  // and only returns once the page is scrolled back near the top.
+  const hideAfter = 400;
+
+  const updateHeader = () => {
+    const menuOpen = siteNav?.classList.contains('is-open');
+    siteHeader.classList.toggle('is-hidden', window.scrollY > hideAfter && !menuOpen);
+  };
+
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+}
+
+// "Back to top" goes to the very top of the page (above the header), not to
+// the #top anchor on <main>, which sits below the header.
+document.querySelectorAll('.footer-top-link').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});

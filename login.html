@@ -11,10 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=23" />
   </head>
   <body>
     <div class="page-shell">
@@ -48,10 +48,10 @@
             <nav class="site-nav" id="site-nav" aria-label="Main navigation">
               <a href="index.html">Home</a>
               <a href="team.html">Team</a>
-              <a class="mobile-login-link" href="login.html" aria-current="page">Dashboard Login</a>
+              <a class="mobile-login-link" href="https://dashboard.meteoracapital.dev">Dashboard Login</a>
             </nav>
 
-            <a class="header-cta" href="login.html" aria-current="page">
+            <a class="header-cta" href="https://dashboard.meteoracapital.dev">
               Dashboard Login
             </a>
           </div>
@@ -95,31 +95,51 @@
 
       <footer class="site-footer" id="contact">
         <div class="container footer-inner">
-          <div class="footer-location">
-            <p class="footer-heading">Boca Raton</p>
-            <p>1200 N. Federal Hwy</p>
-            <p>Suite 200</p>
-            <p>Boca Raton, FL 33432</p>
+          <a class="footer-brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="footer-brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt=""
+            />
+            <span class="footer-brand-text">
+              <span class="footer-brand-name">Meteora</span>
+              <span class="footer-brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="footer-columns">
+            <div class="footer-col">
+              <p class="footer-heading">Office</p>
+              <address>
+                1200 N. Federal Hwy<br />
+                Suite 200<br />
+                Boca Raton, FL 33432
+              </address>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-heading">Contact</p>
+              <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
+              <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
+              <a href="tel:201-906-0527">201-906-0527</a>
+            </div>
+
+            <nav class="footer-col" aria-label="Footer">
+              <p class="footer-heading">Explore</p>
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="https://dashboard.meteoracapital.dev">Dashboard Login</a>
+            </nav>
           </div>
 
-          <div class="footer-contact">
-            <p class="footer-heading">Contact</p>
-            <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
-            <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
-            <a href="tel:201-906-0527">201-906-0527</a>
-          </div>
-
-          <div class="footer-home">
-            <a href="index.html">Home</a>
-          </div>
-
-          <div class="footer-meta">
-            <p>© <span id="year"></span> Meteora Capital, LLC</p>
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Meteora Capital, LLC</p>
+            <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
           </div>
         </div>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>

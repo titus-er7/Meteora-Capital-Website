@@ -24,7 +24,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   background:
     radial-gradient(circle at top, rgba(216, 178, 115, 0.18), transparent 28%),
     linear-gradient(180deg, #091018 0%, #0d1622 100%);
@@ -220,7 +220,7 @@ button {
   color: var(--accent);
   font-size: 0.78rem;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 700;
 }
 
@@ -380,7 +380,7 @@ h1 {
   margin-bottom: 0.25rem;
   color: var(--muted);
   font-size: 0.74rem;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.12em;
 }
 
@@ -765,7 +765,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   letter-spacing: -0.025em;
 }
@@ -794,7 +794,7 @@ h3 {
   border-radius: 50%;
   background: transparent;
   color: #176344;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.45rem;
   font-weight: 600;
 }
@@ -804,7 +804,7 @@ h3 {
   color: #315447;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .site-nav a:hover,
@@ -821,7 +821,7 @@ h3 {
   border-radius: 0;
   font-size: 0.75rem;
   letter-spacing: 0.11em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .header-cta {
@@ -914,7 +914,7 @@ h1 {
 
 .stat-number {
   color: #175d40;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.65rem;
 }
 
@@ -998,7 +998,7 @@ h1 {
 
 .stat-kicker {
   color: #175d40;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
 }
 
@@ -1089,7 +1089,7 @@ h1 {
   border-radius: 50%;
   background: #f1f6f2;
   color: #246243;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.5rem;
 }
 
@@ -1172,9 +1172,9 @@ h1 {
 
 /* Photo-led navy and white treatment inspired by Integrus Partners. */
 :root {
-  --text: #3f7194;
-  --muted: #6d8799;
-  --muted-strong: #4e7fa1;
+  --text: #2e3d4c;
+  --muted: #2e3d4c;
+  --muted-strong: #2e3d4c;
   --accent: #83b8dc;
   --line: #e0e5eb;
   --shadow: rgba(68, 123, 160, 0.14);
@@ -1185,14 +1185,14 @@ h1 {
 body {
   background: #fff;
   color: var(--text);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   overflow-x: hidden;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   letter-spacing: -0.035em;
 }
 
@@ -1223,7 +1223,7 @@ h3 {
 .brand {
   gap: 0.8rem;
   flex-shrink: 0;
-  color: #47799b;
+  color: #2e3d4c;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -1238,8 +1238,8 @@ h3 {
   border-radius: 50%;
   background: #fff;
   box-shadow: 0 0 0 4px #fff, 0 0 0 5px #d5d8df, 0 0 0 9px #fff, 0 0 0 10px #8889a5;
-  color: #293e5a;
-  font-family: "Inter", Arial, sans-serif;
+  color: #2e3d4c;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -1257,7 +1257,7 @@ h3 {
   gap: clamp(1.1rem, 2.3vw, 2.2rem);
   flex-wrap: nowrap;
   white-space: nowrap;
-  color: #4f7fa0;
+  color: #2e3d4c;
   font-size: 0.86rem;
   letter-spacing: 0;
   text-transform: none;
@@ -1275,7 +1275,7 @@ h3 {
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: #6da6cc;
+  color: #2e3d4c;
 }
 
 .header-cta,
@@ -1374,7 +1374,7 @@ h3 {
   max-width: 930px;
   margin-bottom: 1.8rem;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(2.25rem, 4.1vw, 3.25rem);
   font-weight: 200;
   letter-spacing: normal;
@@ -1426,7 +1426,7 @@ h3 {
   background: transparent;
   color: #fff;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
+  text-transform: none;
   box-shadow: none;
 }
 
@@ -1484,7 +1484,7 @@ h3 {
 
 .stat-number {
   color: #fff;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -1523,7 +1523,7 @@ h3 {
 
 .name-origin-title h2 {
   margin: 0 0 0.55rem;
-  color: #4b7fa1;
+  color: #2e3d4c;
   font-size: clamp(2.15rem, 4.3vw, 3.65rem);
   font-weight: 500;
   letter-spacing: -0.045em;
@@ -1533,7 +1533,7 @@ h3 {
 .name-origin-title h2 span {
   display: block;
   margin-top: 0.45rem;
-  color: #7b9bb1;
+  color: #2e3d4c;
   font-size: clamp(0.96rem, 1.45vw, 1.18rem);
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -1542,7 +1542,7 @@ h3 {
 
 .name-origin-title p:last-child {
   margin: 0;
-  color: #6e8799;
+  color: #2e3d4c;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0;
@@ -1556,7 +1556,7 @@ h3 {
 
 .name-origin-copy p {
   margin: 0;
-  color: #587f9a;
+  color: #2e3d4c;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   line-height: 1.78;
   overflow-wrap: anywhere;
@@ -1580,7 +1580,7 @@ h3 {
 
 .mission-copy .eyebrow {
   margin-bottom: 0.8rem;
-  color: #7b9bb1;
+  color: #2e3d4c;
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -1588,7 +1588,7 @@ h3 {
 
 .mission-copy h2 {
   margin: 0;
-  color: #4b7fa1;
+  color: #2e3d4c;
   font-size: clamp(1rem, 1.2vw, 1.2rem);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -1641,7 +1641,7 @@ h3 {
 .barclayhedge-wordmark {
   margin: 0;
   color: #191714;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(0.78rem, 1.25vw, 1rem);
   font-weight: 700;
   letter-spacing: -0.065em;
@@ -1731,7 +1731,7 @@ h3 {
 
 .stat-kicker {
   margin-bottom: 0.35rem;
-  color: #527e9d;
+  color: #2e3d4c;
   font-size: clamp(2rem, 3vw, 2.8rem);
   font-weight: 600;
   line-height: 1.1;
@@ -1744,7 +1744,7 @@ h3 {
 .feature-card p,
 .strategy-columns p,
 .person-card p {
-  color: #6e8799;
+  color: #2e3d4c;
 }
 
 .section-surface,
@@ -1761,7 +1761,7 @@ h3 {
 .section-head h2,
 .section-intro h2,
 .cta-panel h2 {
-  color: #4b7fa1;
+  color: #2e3d4c;
   font-size: clamp(2.35rem, 4.4vw, 3.6rem);
   font-weight: 500;
   letter-spacing: -0.045em;
@@ -1782,7 +1782,7 @@ h3 {
 }
 
 .eyebrow {
-  color: #7b9bb1;
+  color: #2e3d4c;
   font-size: 0.75rem;
   letter-spacing: 0.16em;
 }
@@ -1809,7 +1809,7 @@ h3 {
 
 .approach-copy h3 {
   margin: 0 0 0.9rem;
-  color: #4b7fa1;
+  color: #2e3d4c;
   font-size: clamp(1.6rem, 2.6vw, 2.15rem);
   font-weight: 500;
   line-height: 1.14;
@@ -1817,7 +1817,7 @@ h3 {
 
 .approach-copy > p:last-child {
   margin: 0;
-  color: #6e8799;
+  color: #2e3d4c;
 }
 
 .capability-grid {
@@ -1852,8 +1852,8 @@ h3 {
 .feature-card h3,
 .strategy-columns h3,
 .person-card h3 {
-  color: #4f86aa;
-  font-family: "Inter", Arial, sans-serif;
+  color: #2e3d4c;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -1897,8 +1897,8 @@ h3 {
   border: 1px solid #d6dce5;
   border-radius: 50%;
   background: #edf1f5;
-  color: #243d5c;
-  font-family: "Inter", Arial, sans-serif;
+  color: #2e3d4c;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1.15rem;
   font-weight: 500;
 }
@@ -1963,7 +1963,7 @@ h3 {
 .site-footer {
   padding: 2.75rem 0 1.25rem;
   border-top: 0;
-  background: #6e8fb0;
+  background: #2e3d4c;
 }
 
 .footer-inner {
@@ -2028,7 +2028,7 @@ h3 {
 }
 
 .site-nav a[aria-current="page"] {
-  color: #6da6cc;
+  color: #2e3d4c;
   font-weight: 600;
 }
 
@@ -2044,22 +2044,21 @@ h3 {
   position: relative;
   overflow: hidden;
   padding: clamp(3.25rem, 5.8vw, 5.35rem) 0 clamp(1.75rem, 3.8vw, 3rem);
-  background-color: #6e8fb0;
+  background-color: #1c2a3a;
   color: #fff;
 }
 
+/* Same photo and navy wash as the homepage hero. */
 .team-hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(90deg, rgba(83, 116, 148, 0.76) 0%, rgba(110, 143, 176, 0.68) 52%, rgba(83, 116, 148, 0.76) 100%),
-    radial-gradient(ellipse at center, rgba(68, 94, 122, 0.48), rgba(110, 143, 176, 0.18) 64%),
-    url("https://images.pexels.com/photos/34186018/pexels-photo-34186018.jpeg?auto=compress&cs=tinysrgb&w=2200&h=1200&dpr=1");
-  background-position: center, center, 46% 48%;
-  background-size: cover, cover, 118% auto;
+    linear-gradient(90deg, rgba(18, 29, 43, 0.66) 0%, rgba(18, 29, 43, 0.44) 42%, rgba(18, 29, 43, 0.08) 78%, rgba(18, 29, 43, 0) 100%),
+    url("assets/hero-mountains.jpg");
+  background-position: center, 60% 50%;
+  background-size: cover, cover;
   background-repeat: no-repeat;
-  filter: saturate(0.58) contrast(0.92) brightness(0.96);
 }
 
 .team-hero-inner {
@@ -2111,7 +2110,7 @@ h3 {
 
 .team-section-heading h2 {
   margin: 0;
-  color: #4b7fa1;
+  color: #2e3d4c;
   font-size: clamp(1.75rem, 3vw, 2.6rem);
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -2145,7 +2144,7 @@ h3 {
 .team-member-card h3 {
   max-width: 100%;
   margin: 0 0 0.45rem;
-  color: #4f86aa;
+  color: #2e3d4c;
   font-size: clamp(1.05rem, 1.45vw, 1.3rem);
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -2156,7 +2155,7 @@ h3 {
 .team-member-card p {
   max-width: 100%;
   margin: 0;
-  color: #6e8799;
+  color: #2e3d4c;
   font-size: 0.95rem;
   line-height: 1.45;
   overflow-wrap: break-word;
@@ -2225,7 +2224,7 @@ h3 {
 
 .login-form-heading p {
   margin: 0 0 0.15rem;
-  color: #4f86aa;
+  color: #2e3d4c;
   font-size: 1.35rem;
   font-weight: 700;
   line-height: 1.2;
@@ -2239,7 +2238,7 @@ h3 {
 .form-field label,
 .remember-option,
 .login-options a {
-  color: #5f7f96;
+  color: #2e3d4c;
   font-size: 0.88rem;
   font-weight: 600;
 }
@@ -2252,7 +2251,7 @@ h3 {
   border: 1px solid #d5dfe7;
   border-radius: 3px;
   background: #fff;
-  color: #365f7d;
+  color: #2e3d4c;
   font: inherit;
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -2284,11 +2283,11 @@ h3 {
 }
 
 .login-options a {
-  color: #4f86aa;
+  color: #2e3d4c;
 }
 
 .login-options a:hover {
-  color: #6da6cc;
+  color: #2e3d4c;
 }
 
 .login-submit {
@@ -2695,7 +2694,7 @@ h3 {
 .site-nav {
   justify-self: center;
   gap: clamp(1.5rem, 2.6vw, 2.4rem);
-  color: #1f3550;
+  color: #2e3d4c;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -2729,7 +2728,7 @@ h3 {
 .site-nav a:hover,
 .site-nav a:focus-visible,
 .site-nav a[aria-current="page"] {
-  color: #1f3550;
+  color: #2e3d4c;
 }
 
 .site-nav a[aria-current="page"] {
@@ -2742,7 +2741,7 @@ h3 {
   border: 0;
   border-radius: 0;
   background: none;
-  color: #1f3550;
+  color: #2e3d4c;
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -2951,5 +2950,494 @@ h3 {
 @media (max-width: 920px) {
   .home .hero-copy {
     left: 0;
+  }
+}
+
+/* Header: Home, Team and Dashboard Login sit together on the right. */
+.nav-wrap {
+  gap: clamp(1.5rem, 2.6vw, 2.4rem);
+}
+
+.site-nav {
+  margin-left: auto;
+}
+
+@media (max-width: 920px) {
+  .site-nav {
+    margin-left: 0;
+  }
+}
+
+/* Homepage hero: full-bleed photo, dark wash on the left, serif headline. */
+.home .hero.section-dark {
+  align-items: center;
+  min-height: clamp(460px, 44vw, 600px);
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background: #1c2a3a;
+}
+
+.home .hero-bg {
+  background-color: #1c2a3a;
+  background-image:
+    linear-gradient(90deg, rgba(18, 29, 43, 0.66) 0%, rgba(18, 29, 43, 0.44) 42%, rgba(18, 29, 43, 0.08) 78%, rgba(18, 29, 43, 0) 100%),
+    url("assets/hero-mountains.jpg");
+  background-position: center, 60% 50%;
+  background-size: cover, cover;
+  filter: none;
+  transform: none;
+}
+
+.home .hero-copy {
+  left: 0;
+  max-width: 680px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.home .hero h1 {
+  margin-bottom: 1.4rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(2.3rem, 4.4vw, 3.6rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.12;
+  text-shadow: 0 2px 16px rgba(5, 15, 25, 0.35);
+}
+
+.home .hero h1 span,
+.home .hero h1 strong {
+  font-weight: 400;
+}
+
+.home .hero .lede {
+  max-width: 600px;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: #e6ecf2;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  text-shadow: 0 1px 8px rgba(5, 15, 25, 0.4);
+}
+
+/* Four pillar cards under the hero. */
+.pillars {
+  padding: clamp(2rem, 3.5vw, 3rem) 0;
+  background: #f4f6f8;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Figure sits at the top; the description is centered in the space between
+   the figure and the bottom of the card. */
+.pillar-card {
+  display: flex;
+  flex-direction: column;
+  min-height: clamp(11rem, 14vw, 13rem);
+  padding: 1.6rem 1.4rem;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 6px 22px rgba(31, 53, 80, 0.07);
+}
+
+.pillar-card p {
+  margin: 0 0 auto;
+  padding-top: 1.5rem;
+  color: #5b6b7b;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.pillar-card .pillar-stat {
+  align-self: start;
+  margin: 0 0 auto;
+  padding-top: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: #2e3d4c;
+  font-size: clamp(2.4rem, 3.8vw, 3.4rem);
+  line-height: 1.02;
+}
+
+@media (max-width: 920px) {
+  .pillar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .home .hero-copy {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .home .hero h1 {
+    font-size: clamp(1.9rem, 8vw, 2.3rem);
+  }
+
+  .home .hero-bg {
+    background-image:
+      linear-gradient(90deg, rgba(18, 29, 43, 0.68) 0%, rgba(18, 29, 43, 0.45) 100%),
+      url("assets/hero-mountains.jpg");
+  }
+
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Team page banner: taller photo (same treatment as the homepage); short rule,
+   then a serif title and subtitle aligned with the homepage hero text. */
+.team-hero {
+  display: flex;
+  align-items: center;
+  min-height: clamp(280px, 24vw, 400px);
+  padding: clamp(2.5rem, 4vw, 3.5rem) 0;
+}
+
+.team-hero-inner {
+  max-width: var(--max-width);
+}
+
+.team-hero-inner::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  margin-bottom: clamp(1.5rem, 3vw, 2.4rem);
+  background: #fff;
+}
+
+.team-hero h1 {
+  margin: 0 0 1.1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(3rem, 5.6vw, 5rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+  text-shadow: 0 2px 14px rgba(5, 21, 32, 0.35);
+}
+
+.team-hero p:last-child {
+  max-width: 38rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.15rem, 1.6vw, 1.45rem);
+  line-height: 1.45;
+  text-shadow: 0 1px 8px rgba(5, 21, 32, 0.4);
+}
+
+/* Form controls don't inherit the page font by default. */
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Header slides up out of view once the page is scrolled down (script.js). */
+.site-header {
+  transition: transform 0.35s ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-100%);
+}
+
+/* Mission section: copy only, now that the award panels are gone. */
+.mission-recognition-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.mission-copy {
+  max-width: 60rem;
+}
+
+/* Mission and name-origin body copy in Inter; "Our mission" label in
+   sentence case rather than all caps. */
+.mission-copy h2,
+.name-origin-copy p {
+  font-family: "Inter", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.mission-copy .eyebrow {
+  margin-bottom: 1.1rem;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.1;
+  text-transform: none;
+}
+
+/* Footer: logo lockup (white) across the top-left, all other text in Inter. */
+.site-footer,
+.site-footer p,
+.site-footer a {
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.footer-brand {
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.footer-brand-logo {
+  display: block;
+  width: auto;
+  height: 3.1rem;
+  /* Trim the icon PNG's built-in left padding so it lines up with the text. */
+  margin-left: -0.5rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-brand-text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cinzel", Georgia, serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.footer-brand-name {
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.footer-brand-sub {
+  margin-top: 0.3rem;
+  padding-left: 0.3em;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+}
+
+/* Footer layout: logo on the left, three link columns pushed to the right,
+   then a divider with the copyright and a back-to-top link. */
+.site-footer {
+  padding: clamp(3rem, 5vw, 4.5rem) 0 1.75rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 2.5rem 4rem;
+}
+
+.footer-brand {
+  grid-column: auto;
+  margin: 0;
+}
+
+.footer-columns {
+  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2rem clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  font-size: 0.92rem;
+}
+
+.site-footer .footer-heading {
+  margin: 0 0 0.45rem;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: none;
+}
+
+.footer-col address {
+  color: #edf4fb;
+  font-style: normal;
+  line-height: 1.75;
+}
+
+.site-footer .footer-col a,
+.site-footer .footer-top-link {
+  position: relative;
+  color: #fff;
+}
+
+.site-footer .footer-col a::after,
+.site-footer .footer-top-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.site-footer .footer-col a:hover::after,
+.site-footer .footer-col a:focus-visible::after,
+.site-footer .footer-top-link:hover::after,
+.site-footer .footer-top-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.footer-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  margin-top: clamp(1rem, 3vw, 2.5rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 0.8rem;
+}
+
+.site-footer .footer-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 920px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .footer-columns {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
+
+/* No all-caps text anywhere (except the logo wordmark); labels drop the wide
+   tracking that only suited capitals. */
+.eyebrow,
+.site-footer .footer-heading {
+  letter-spacing: 0.01em;
+}
+
+.site-footer .footer-heading {
+  font-size: 0.82rem;
+}
+
+.name-origin-title .eyebrow {
+  font-size: 1rem;
+}
+
+/* "What's in a name?" as an editorial dictionary entry: the word large on the
+   left, the three literal translations as a numbered list on the right. */
+.name-origin {
+  padding: clamp(3rem, 5vw, 4.5rem) 0;
+}
+
+.name-origin-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.name-origin-label {
+  margin: 0 0 0.6rem;
+  color: #5b6b7b;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+}
+
+.name-origin-heading {
+  margin: 0;
+  color: #2e3d4c;
+  font-size: clamp(2.8rem, 5vw, 4.25rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.name-origin-say {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0.9rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(46, 61, 76, 0.18);
+  color: #2e3d4c;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.name-origin-type {
+  color: #5b6b7b;
+  font-style: italic;
+}
+
+.name-origin-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid rgba(46, 61, 76, 0.18);
+}
+
+.name-origin-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(46, 61, 76, 0.18);
+  color: #2e3d4c;
+  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.name-origin-num {
+  flex: 0 0 auto;
+  color: #5b6b7b;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
+
+.name-origin-place {
+  margin-top: 1.4rem;
+}
+
+.name-origin-place p:last-child {
+  max-width: 34rem;
+  margin: 0;
+  color: #2e3d4c;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 920px) {
+  .name-origin-layout {
+    grid-template-columns: 1fr;
   }
 }
