@@ -3348,96 +3348,193 @@ textarea {
   font-size: 1rem;
 }
 
-/* "What's in a name?" as an editorial dictionary entry: the word large on the
-   left, the three literal translations as a numbered list on the right. */
+/* "What's in a name?" as a centered dictionary plate: the word with its Greek
+   original, the three literal translations side by side, then the place. */
 .name-origin {
-  padding: clamp(3rem, 5vw, 4.5rem) 0;
+  padding: clamp(3rem, 5.5vw, 4.75rem) 0;
+  border-top: 0;
+  background: #fff;
 }
 
 .name-origin-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  align-items: start;
-  gap: clamp(2.5rem, 6vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  text-align: center;
 }
 
 .name-origin-label {
-  margin: 0 0 0.6rem;
+  margin: 0 0 0.5rem;
   color: #5b6b7b;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.01em;
+  font-size: 0.85rem;
 }
 
 .name-origin-heading {
   margin: 0;
   color: #2e3d4c;
-  font-size: clamp(2.8rem, 5vw, 4.25rem);
+  font-size: clamp(2.6rem, 4.6vw, 3.75rem);
   font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 0.95;
+  line-height: 1;
 }
 
 .name-origin-say {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem 1.1rem;
-  margin: 0.9rem 0 0;
-  padding-top: 0.8rem;
-  border-top: 1px solid rgba(46, 61, 76, 0.18);
-  color: #2e3d4c;
+  justify-content: center;
+  gap: 0.3rem 0.6rem;
+  margin: 0.75rem 0 0;
+  color: #5b6b7b;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.88rem;
+}
+
+.name-origin-say [lang="el"] {
+  color: #2e3d4c;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.05rem;
 }
 
 .name-origin-type {
-  color: #5b6b7b;
   font-style: italic;
 }
 
 .name-origin-list {
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, 52rem);
+  margin: clamp(1.75rem, 3vw, 2.5rem) 0 0;
   padding: 0;
   list-style: none;
   border-top: 1px solid rgba(46, 61, 76, 0.18);
+  border-bottom: 1px solid rgba(46, 61, 76, 0.18);
 }
 
 .name-origin-list li {
   display: flex;
-  align-items: baseline;
-  gap: 1.5rem;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid rgba(46, 61, 76, 0.18);
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1.15rem 1rem;
   color: #2e3d4c;
-  font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
   font-style: italic;
   line-height: 1.2;
 }
 
+.name-origin-list li + li {
+  border-left: 1px solid rgba(46, 61, 76, 0.18);
+}
+
 .name-origin-num {
-  flex: 0 0 auto;
   color: #5b6b7b;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 0.8rem;
-  font-style: normal;
-  letter-spacing: 0.04em;
+  font-size: 0.9rem;
 }
 
 .name-origin-place {
-  margin-top: 1.4rem;
-}
-
-.name-origin-place p:last-child {
-  max-width: 34rem;
-  margin: 0;
+  max-width: 38rem;
+  margin: clamp(1.5rem, 2.5vw, 2rem) 0 0;
   color: #2e3d4c;
   font-family: "Inter", Arial, sans-serif;
   font-size: 0.92rem;
   line-height: 1.6;
 }
 
+@media (max-width: 640px) {
+  .name-origin-list {
+    grid-template-columns: 1fr;
+  }
+
+  .name-origin-list li + li {
+    border-top: 1px solid rgba(46, 61, 76, 0.18);
+    border-left: 0;
+  }
+}
+
+/* Mission: heading on the left; a serif lead statement and two numbered
+   pillars (public / private markets) on the right. */
+.mission-recognition {
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0;
+}
+
+.mission-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.38fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.mission-heading {
+  margin: 0;
+  color: #2e3d4c;
+  font-size: clamp(2rem, 3.2vw, 2.9rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
+.mission-lead {
+  margin: 0;
+  color: #2e3d4c;
+  font-size: clamp(1.5rem, 2.4vw, 2.15rem);
+  line-height: 1.3;
+}
+
+.mission-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 3rem);
+  margin-top: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.mission-pillar {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(46, 61, 76, 0.22);
+}
+
+.mission-pillar p {
+  margin: 0;
+  color: #2e3d4c;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.mission-pillar .mission-pillar-label {
+  margin-bottom: 0.6rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+}
+
+.mission-pillar-label span {
+  margin-right: 0.4rem;
+  color: #5b6b7b;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.mission-heading::before {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  margin-bottom: 1rem;
+  background: #2e3d4c;
+}
+
 @media (max-width: 920px) {
-  .name-origin-layout {
+  .mission-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-heading {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .mission-pillars {
     grid-template-columns: 1fr;
   }
 }
