@@ -69,6 +69,7 @@ PUBLIC_FILES = {
     "investors.html",
     "review.html",
     "set-password.html",
+    "favicon.ico",
     "styles.css",
     "script.js",
     "portal.js",
