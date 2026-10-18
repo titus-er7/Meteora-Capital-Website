@@ -2032,10 +2032,6 @@ h3 {
   font-weight: 600;
 }
 
-.site-nav .mobile-login-link {
-  display: none;
-}
-
 .team-page {
   background: #fff;
 }
@@ -2425,10 +2421,6 @@ h3 {
 
   .header-cta {
     display: none;
-  }
-
-  .site-nav .mobile-login-link {
-    display: inline-flex;
   }
 
   .brand-mark {
@@ -3032,35 +3024,28 @@ h3 {
   gap: clamp(1rem, 2vw, 1.5rem);
 }
 
-/* Figure sits at the top; the description is centered in the space between
-   the figure and the bottom of the card. */
+/* Stat with its label directly beneath it. */
 .pillar-card {
-  display: flex;
-  flex-direction: column;
-  min-height: clamp(11rem, 14vw, 13rem);
-  padding: 1.6rem 1.4rem;
+  padding: 1.5rem 1.4rem 1.4rem;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 6px 22px rgba(31, 53, 80, 0.07);
 }
 
 .pillar-card p {
-  margin: 0 0 auto;
-  padding-top: 1.5rem;
+  margin: 0.55rem 0 0;
   color: #5b6b7b;
   font-family: "Inter", Arial, sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.55;
+  font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 .pillar-card .pillar-stat {
-  align-self: start;
-  margin: 0 0 auto;
-  padding-top: 0;
+  margin: 0;
   font-family: "Times New Roman", Times, serif;
   color: #2e3d4c;
-  font-size: clamp(2.4rem, 3.8vw, 3.4rem);
-  line-height: 1.02;
+  font-size: clamp(2.2rem, 3.2vw, 2.9rem);
+  line-height: 1;
 }
 
 @media (max-width: 920px) {
@@ -3400,36 +3385,16 @@ textarea {
   font-style: italic;
 }
 
-.name-origin-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  width: min(100%, 52rem);
-  margin: clamp(1.75rem, 3vw, 2.5rem) 0 0;
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid rgba(46, 61, 76, 0.18);
-  border-bottom: 1px solid rgba(46, 61, 76, 0.18);
-}
-
-.name-origin-list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 1.15rem 1rem;
+.name-origin-translation {
+  max-width: 40rem;
+  margin: 0;
   color: #2e3d4c;
-  font-size: clamp(1.15rem, 1.7vw, 1.4rem);
+  font-size: clamp(1.25rem, 1.9vw, 1.6rem);
+  line-height: 1.4;
+}
+
+.name-origin-translation em {
   font-style: italic;
-  line-height: 1.2;
-}
-
-.name-origin-list li + li {
-  border-left: 1px solid rgba(46, 61, 76, 0.18);
-}
-
-.name-origin-num {
-  color: #5b6b7b;
-  font-size: 0.9rem;
 }
 
 .name-origin-place {
@@ -3439,17 +3404,6 @@ textarea {
   font-family: "Inter", Arial, sans-serif;
   font-size: 0.92rem;
   line-height: 1.6;
-}
-
-@media (max-width: 640px) {
-  .name-origin-list {
-    grid-template-columns: 1fr;
-  }
-
-  .name-origin-list li + li {
-    border-top: 1px solid rgba(46, 61, 76, 0.18);
-    border-left: 0;
-  }
 }
 
 /* Mission: heading on the left; a serif lead statement and two numbered
@@ -3507,22 +3461,6 @@ textarea {
   font-size: 1.25rem;
 }
 
-.mission-pillar-label span {
-  margin-right: 0.4rem;
-  color: #5b6b7b;
-  font-family: "Inter", Arial, sans-serif;
-  font-size: 0.8rem;
-}
-
-.mission-heading::before {
-  content: "";
-  display: block;
-  width: 2.4rem;
-  height: 2px;
-  margin-bottom: 1rem;
-  background: #2e3d4c;
-}
-
 @media (max-width: 920px) {
   .mission-layout {
     grid-template-columns: 1fr;
@@ -3559,23 +3497,6 @@ textarea {
   display: none;
 }
 
-.name-origin-list {
-  width: 100%;
-  margin-top: 0;
-}
-
-.name-origin-list li {
-  align-items: flex-start;
-}
-
-.name-origin-list li:first-child {
-  padding-left: 0;
-}
-
-.name-origin-list li + li {
-  padding-left: 1.5rem;
-}
-
 .name-origin-place {
   max-width: 40rem;
 }
@@ -3586,8 +3507,3 @@ textarea {
   }
 }
 
-@media (max-width: 640px) {
-  .name-origin-list li + li {
-    padding-left: 0;
-  }
-}
