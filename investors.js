@@ -160,6 +160,6 @@
   session()
     .then((state) => (state.loggedIn ? showMaterials(state.name) : show('login-panel')))
     .catch(() => {
-      showStatus($('portal-status'), 'The investor portal is temporarily unavailable. Please contact Kevin@MeteoraCapital.com.');
+      showStatus($('portal-status'), 'The investor portal is temporarily unavailable. Please contact kevin@meteoracapital.com.');
     });
 })();
