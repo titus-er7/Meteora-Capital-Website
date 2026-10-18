@@ -6,6 +6,15 @@
   const $ = (id) => document.getElementById(id);
 
   const panels = ['login-panel', 'request-panel', 'request-done-panel', 'materials-panel'];
+
+  // Set when the portal server can't be reached (e.g. static hosting such as
+  // GitHub Pages). The screens still show; submitting explains it's not live yet.
+  let offline = false;
+  const OFFLINE_MESSAGE = 'The investor portal is not available right now. Please contact info@meteoracapital.com.';
+  const unavailable = (statusEl) => {
+    if (offline) showStatus(statusEl, OFFLINE_MESSAGE);
+    return offline;
+  };
   const show = (id) => panels.forEach((panel) => { $(panel).hidden = panel !== id; });
 
   // Disable a form's buttons while its request is in flight.
@@ -57,6 +66,7 @@
       showStatus($('login-status'), 'Enter your email and password.');
       return;
     }
+    if (unavailable($('login-status'))) return;
     const result = await busy(loginForm, () => post('/api/login', { email, password }));
     loginForm.password.value = '';
     if (!result.ok) {
@@ -82,6 +92,7 @@
       showStatus($('forgot-status'), 'Enter a valid email address.');
       return;
     }
+    if (unavailable($('forgot-status'))) return;
     const result = await busy(forgotForm, () => post('/api/password/forgot', { email }));
     showStatus($('forgot-status'), result.data.message || result.data.error || '', result.ok ? 'success' : 'error');
   });
@@ -142,6 +153,7 @@
       showStatus($('request-status'), problem);
       return;
     }
+    if (unavailable($('request-status'))) return;
     const result = await busy(form, () => post('/api/request-access', data));
     if (!result.ok) {
       showStatus($('request-status'), result.data.error || 'Something went wrong. Please try again.');
@@ -160,6 +172,7 @@
   session()
     .then((state) => (state.loggedIn ? showMaterials(state.name) : show('login-panel')))
     .catch(() => {
-      showStatus($('portal-status'), 'The investor portal is temporarily unavailable. Please contact kevin@meteoracapital.com.');
+      offline = true;
+      show('login-panel');
     });
 })();
