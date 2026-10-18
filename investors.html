@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Investor materials for accredited investors in Meteora Capital."
+    />
+    <title>Investors | Meteora Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=38" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt="Meteora Capital mountain logo"
+            />
+            <span class="brand-text">
+              <span class="brand-name">Meteora</span>
+              <span class="brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="nav-actions">
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="site-nav"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="investors.html" aria-current="page">Investors</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="team-page investors-page" id="top">
+        <section class="team-hero">
+          <div class="container team-hero-inner">
+            <h1>Investors</h1>
+            <p>Our investor deck and latest tear sheet are available to approved accredited investors.</p>
+          </div>
+        </section>
+
+        <section class="investor-access">
+          <div class="container">
+            <noscript>
+              <p class="form-status">JavaScript is required to use the investor portal.</p>
+            </noscript>
+
+            <div class="investor-panel" id="login-panel" hidden>
+              <form class="investor-form" id="login-form" novalidate>
+                <div class="investor-form-intro">
+                  <h2>Investor Login</h2>
+                  <p>Sign in to view our investor deck and latest tear sheet.</p>
+                </div>
+
+                <div class="form-field">
+                  <label for="login-email">Email address</label>
+                  <input id="login-email" name="email" type="email" autocomplete="username" maxlength="254" required />
+                </div>
+                <div class="form-field">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" name="password" type="password" autocomplete="current-password" maxlength="128" required />
+                </div>
+
+                <p class="form-status" id="login-status" role="alert" hidden></p>
+
+                <div class="form-actions">
+                  <button class="login-submit investor-submit" type="submit">Sign in</button>
+                  <button class="text-button" type="button" id="show-forgot">Forgot password?</button>
+                </div>
+              </form>
+
+              <form class="investor-form forgot-form" id="forgot-form" novalidate hidden>
+                <div class="form-field">
+                  <label for="forgot-email">Email address for the reset link</label>
+                  <input id="forgot-email" name="email" type="email" autocomplete="email" maxlength="254" required />
+                </div>
+                <p class="form-status" id="forgot-status" role="alert" hidden></p>
+                <div class="form-actions">
+                  <button class="login-submit investor-submit" type="submit">Send reset link</button>
+                </div>
+              </form>
+
+              <div class="panel-footer">
+                <p>Don't have access yet?</p>
+                <button class="text-button" type="button" id="show-request">Request access</button>
+              </div>
+            </div>
+
+            <div class="investor-panel" id="request-panel" hidden>
+              <form class="investor-form" id="attestation-form" novalidate>
+                <div class="investor-form-intro">
+                  <h2>Request Access</h2>
+                  <p>
+                    Our materials are available to accredited investors. Complete the attestation below and we will
+                    email you once your access is approved.
+                  </p>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="full-name">Full name</label>
+                    <input id="full-name" name="fullName" type="text" autocomplete="name" maxlength="120" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="investor-email">Email address</label>
+                    <input id="investor-email" name="email" type="email" autocomplete="email" maxlength="254" required />
+                  </div>
+                </div>
+
+                <fieldset class="form-group">
+                  <legend>I am investing as</legend>
+                  <div class="choice-row">
+                    <label class="check-option">
+                      <input type="radio" name="investorType" value="individual" checked />
+                      <span>An individual</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="radio" name="investorType" value="entity" />
+                      <span>On behalf of an entity</span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="form-field" id="entity-field" hidden>
+                  <label for="entity-name">Entity name</label>
+                  <input id="entity-name" name="entityName" type="text" autocomplete="organization" maxlength="160" />
+                </div>
+
+                <fieldset class="form-group" data-basis-for="individual">
+                  <legend>I qualify as an accredited investor because (select all that apply)</legend>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="income" />
+                      <span>Individual income over $200,000 (or joint income with a spouse or spousal equivalent over $300,000) in each of the two most recent years, with a reasonable expectation of reaching the same level this year.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="net_worth" />
+                      <span>Individual or joint net worth over $1,000,000, excluding the value of my primary residence.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="license" />
+                      <span>I hold a Series 7, Series 65 or Series 82 license in good standing.</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-group" data-basis-for="entity" hidden>
+                  <legend>The entity qualifies as an accredited investor because (select all that apply)</legend>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="entity_assets" />
+                      <span>Corporation, partnership, LLC or 501(c)(3) organization with total assets over $5,000,000, not formed to acquire the securities offered.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="entity_investments" />
+                      <span>Entity owning investments over $5,000,000, not formed to acquire the securities offered.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="entity_owners" />
+                      <span>Entity in which every equity owner is an accredited investor.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="institution" />
+                      <span>Bank, broker-dealer, registered investment adviser, insurance company or registered investment company.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="family_office" />
+                      <span>Family office with over $5,000,000 in assets under management, or a family client of such an office.</span>
+                    </label>
+                    <label class="check-option">
+                      <input type="checkbox" name="basis" value="trust" />
+                      <span>Trust with total assets over $5,000,000, not formed to acquire the securities offered, directed by a sophisticated person.</span>
+                    </label>
+                </fieldset>
+
+                <label class="check-option attest-option">
+                  <input type="checkbox" name="attest" id="attest" required />
+                  <span>
+                    I certify that the information above is true and complete, and that I (or the entity I represent)
+                    am an &ldquo;accredited investor&rdquo; as defined in Rule 501(a) of Regulation D under the
+                    Securities Act of 1933. I understand that the materials provided are confidential, are for
+                    informational purposes only, and do not constitute an offer to sell or a solicitation of an offer
+                    to buy any security.
+                  </span>
+                </label>
+
+                <div class="form-field">
+                  <label for="signature">Signature (type your full name)</label>
+                  <input id="signature" name="signature" type="text" autocomplete="off" maxlength="120" required />
+                </div>
+
+                <p class="form-status" id="request-status" role="alert" hidden></p>
+
+                <div class="form-actions">
+                  <button class="login-submit investor-submit" type="submit">Submit request</button>
+                  <button class="text-button" type="button" id="back-to-login">Back to sign in</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="investor-panel" id="request-done-panel" hidden>
+              <div class="investor-form-intro">
+                <h2>Request Received</h2>
+                <p id="request-done-message"></p>
+              </div>
+            </div>
+
+            <div class="investor-panel" id="materials-panel" hidden>
+              <div class="materials-head">
+                <div class="investor-form-intro">
+                  <h2>Investor Materials</h2>
+                  <p>Signed in as <span id="investor-name"></span>. The materials below open in DocSend.</p>
+                </div>
+                <button class="text-button" type="button" id="logout">Sign out</button>
+              </div>
+              <div class="materials-grid">
+                <a class="material-card" id="material-deck" target="_blank" rel="noopener noreferrer">
+                  <span class="material-title">Investor Deck</span>
+                  <span class="material-link">View on DocSend <span aria-hidden="true">&rarr;</span></span>
+                </a>
+                <a class="material-card" id="material-tearsheet" target="_blank" rel="noopener noreferrer">
+                  <span class="material-title">Latest Tear Sheet</span>
+                  <span class="material-link">View on DocSend <span aria-hidden="true">&rarr;</span></span>
+                </a>
+              </div>
+            </div>
+
+            <p class="form-status portal-unavailable" id="portal-status" role="alert" hidden></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+          <a class="footer-brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="footer-brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt=""
+            />
+            <span class="footer-brand-text">
+              <span class="footer-brand-name">Meteora</span>
+              <span class="footer-brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="footer-columns">
+            <div class="footer-col">
+              <p class="footer-heading">Office</p>
+              <address>
+                1200 N. Federal Hwy<br />
+                Suite 200<br />
+                Boca Raton, FL 33432
+              </address>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-heading">Contact</p>
+              <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
+              <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
+              <a href="tel:201-906-0527">201-906-0527</a>
+            </div>
+
+            <nav class="footer-col" aria-label="Footer">
+              <p class="footer-heading">Explore</p>
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="investors.html">Investors</a>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Meteora Capital, LLC</p>
+            <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=6"></script>
+    <script src="portal.js?v=1"></script>
+    <script src="investors.js?v=2"></script>
+  </body>
+</html>

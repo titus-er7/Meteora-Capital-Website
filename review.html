@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Review an investor access request."
+    />
+    <title>Review Request | Meteora Capital</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=38" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt="Meteora Capital mountain logo"
+            />
+            <span class="brand-text">
+              <span class="brand-name">Meteora</span>
+              <span class="brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="nav-actions">
+            <button
+              class="nav-toggle"
+              type="button"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="site-nav"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="investors.html">Investors</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="team-page investors-page" id="top">
+        <section class="team-hero">
+          <div class="container team-hero-inner">
+            <h1>Review Request</h1>
+            <p>Approve or deny an investor access request.</p>
+          </div>
+        </section>
+
+        <section class="investor-access">
+          <div class="container">
+            <noscript>
+              <p class="form-status">JavaScript is required for this page.</p>
+            </noscript>
+            <div class="investor-panel" id="review-panel" hidden>
+              <div class="investor-form-intro">
+                <h2>Investor Access Request</h2>
+                <p>Review the attestation below. This link works once.</p>
+              </div>
+              <dl class="review-details">
+                <dt>Name</dt>
+                <dd id="r-name"></dd>
+                <dt>Email</dt>
+                <dd id="r-email"></dd>
+                <dt>Investor type</dt>
+                <dd id="r-type"></dd>
+                <dt>Entity</dt>
+                <dd id="r-entity"></dd>
+                <dt>Qualifications</dt>
+                <dd><ul id="r-quals"></ul></dd>
+                <dt>Signature</dt>
+                <dd id="r-signature"></dd>
+                <dt>Submitted</dt>
+                <dd id="r-submitted"></dd>
+              </dl>
+              <div class="form-actions">
+                <button class="login-submit investor-submit" type="button" id="approve">Approve access</button>
+                <button class="login-submit deny-button" type="button" id="deny">Deny</button>
+              </div>
+            </div>
+
+            <p class="form-status" id="review-status" role="alert" hidden></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+          <a class="footer-brand" href="index.html" aria-label="Meteora Capital home">
+            <img
+              class="footer-brand-logo"
+              src="https://meteoracapital.com/wp-content/uploads/2021/12/Meteora-Capital-Icon.png"
+              alt=""
+            />
+            <span class="footer-brand-text">
+              <span class="footer-brand-name">Meteora</span>
+              <span class="footer-brand-sub">Capital</span>
+            </span>
+          </a>
+
+          <div class="footer-columns">
+            <div class="footer-col">
+              <p class="footer-heading">Office</p>
+              <address>
+                1200 N. Federal Hwy<br />
+                Suite 200<br />
+                Boca Raton, FL 33432
+              </address>
+            </div>
+
+            <div class="footer-col">
+              <p class="footer-heading">Contact</p>
+              <a href="mailto:Kevin@MeteoraCapital.com">Kevin@MeteoraCapital.com</a>
+              <a href="mailto:into@meteoracapital.com">into@meteoracapital.com</a>
+              <a href="tel:201-906-0527">201-906-0527</a>
+            </div>
+
+            <nav class="footer-col" aria-label="Footer">
+              <p class="footer-heading">Explore</p>
+              <a href="index.html">Home</a>
+              <a href="team.html">Team</a>
+              <a href="investors.html">Investors</a>
+            </nav>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Meteora Capital, LLC</p>
+            <a class="footer-top-link" href="#top">Back to top <span aria-hidden="true">&uarr;</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js?v=6"></script>
+    <script src="portal.js?v=1"></script>
+    <script src="review.js?v=1"></script>
+  </body>
+</html>
