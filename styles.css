@@ -3507,3 +3507,208 @@ textarea {
   }
 }
 
+
+/* Team page org chart: Vik on top, Kevin and Joe reporting below, joined by
+   thin connector lines. */
+.org-chart-section {
+  padding: clamp(2.75rem, 5vw, 4.5rem) 0 clamp(3.5rem, 6vw, 5.5rem);
+  background: #fff;
+}
+
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-chart .team-member-card {
+  width: min(100%, 26rem);
+  border: 1px solid #d9dee5;
+  min-height: 168px;
+  padding: 1.75rem 2rem;
+}
+
+.org-chart .team-member-card h3 {
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+}
+
+.org-chart .team-member-card p {
+  font-size: 1.02rem;
+  font-style: italic;
+}
+
+.org-chart-top {
+  position: relative;
+}
+
+.org-chart-top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 2rem;
+  background: #d9dee5;
+}
+
+.org-chart-reports {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 4rem;
+}
+
+/* Horizontal bar spanning the centers of the two report cards. */
+.org-chart-reports::before {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  left: calc(25% - 1rem);
+  right: calc(25% - 1rem);
+  height: 1px;
+  background: #d9dee5;
+}
+
+.org-chart-reports .team-member-card {
+  position: relative;
+}
+
+.org-chart-reports .team-member-card::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 1px;
+  height: 2rem;
+  background: #d9dee5;
+}
+
+@media (max-width: 640px) {
+  .org-chart-reports {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .org-chart-top::after,
+  .org-chart-reports::before,
+  .org-chart-reports .team-member-card::before {
+    display: none;
+  }
+}
+
+/* Clickable placards open a bio dialog (script.js). */
+.bio-trigger {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.bio-trigger:hover,
+.bio-trigger:focus-visible {
+  border-color: #2e3d4c;
+  background: #2e3d4c;
+}
+
+.bio-trigger:hover h3,
+.bio-trigger:hover p,
+.bio-trigger:focus-visible h3,
+.bio-trigger:focus-visible p {
+  color: #fff;
+}
+
+.bio-trigger:focus-visible {
+  outline: 2px solid #83b8dc;
+  outline-offset: 3px;
+}
+
+.bio-dialog {
+  width: min(100% - 2rem, 52rem);
+  max-height: min(100% - 2rem, 40rem);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  color: #2e3d4c;
+  box-shadow: 0 24px 60px rgba(18, 29, 43, 0.3);
+}
+
+.bio-dialog[open] {
+  animation: bio-open 0.25s ease;
+  outline: none;
+}
+
+.bio-dialog::backdrop {
+  background: rgba(18, 29, 43, 0.55);
+}
+
+@keyframes bio-open {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+/* Navy band with name and title on the left, Exit on the right. */
+.bio-header {
+  position: relative;
+  min-height: clamp(6.5rem, 12vw, 9rem);
+  padding: clamp(1.4rem, 2.5vw, 2rem) clamp(1.25rem, 3vw, 2.25rem);
+  padding-right: 5rem;
+  background: #2e3d4c;
+  color: #fff;
+}
+
+.bio-header h2 {
+  margin: 0 0 0.4rem;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.bio-role {
+  margin: 0;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  font-style: italic;
+}
+
+.bio-close {
+  position: absolute;
+  top: clamp(1.2rem, 2.2vw, 1.75rem);
+  right: clamp(1.25rem, 3vw, 2.25rem);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+.bio-close:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.bio-body {
+  padding: clamp(1.25rem, 2.5vw, 1.6rem) clamp(1.25rem, 3vw, 2.25rem) clamp(1.4rem, 2.8vw, 1.9rem);
+}
+
+.bio-body p {
+  margin: 0 0 0.85rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(0.9rem, 1vw, 0.98rem);
+  line-height: 1.5;
+}
+
+.bio-body p:last-child {
+  margin-bottom: 0;
+}

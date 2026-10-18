@@ -56,3 +56,19 @@ document.querySelectorAll('.footer-top-link').forEach((link) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+
+// Team placards: clicking one opens its bio dialog; the close button, Esc, or
+// a click on the backdrop closes it.
+document.querySelectorAll('.bio-trigger').forEach((trigger) => {
+  const dialog = document.getElementById(trigger.getAttribute('aria-controls'));
+  if (!dialog) return;
+
+  trigger.addEventListener('click', () => {
+    dialog.showModal();
+    dialog.focus();
+  });
+  dialog.querySelector('.bio-close')?.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+});

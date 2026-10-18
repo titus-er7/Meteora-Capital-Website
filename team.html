@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=23" />
+    <link rel="stylesheet" href="styles.css?v=38" />
   </head>
   <body>
     <div class="page-shell">
@@ -61,92 +61,140 @@
           </div>
         </section>
 
-        <section class="team-directory" aria-label="Meteora Capital team members">
+        <section class="org-chart-section" aria-label="Leadership">
           <div class="container">
-            <div class="team-card-grid">
-              <article class="team-member-card">
+            <div class="org-chart">
+              <button
+                class="team-member-card org-chart-top bio-trigger"
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="bio-vik"
+              >
                 <h3>Vikas Mittal, CFA</h3>
                 <p>Managing Member &amp; CIO</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Joseph Levy, CPA</h3>
-                <p>Chief Operating &amp; Financial Officer, Chief Compliance Officer</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Kevin S. Gahwyler, CFA</h3>
-                <p>Managing Director</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Henry Rogano</h3>
-                <p>Senior Associate</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Alex Piskunov, CFA</h3>
-                <p>Execution Trader</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Stefan Rodic</h3>
-                <p>Investment Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Steve Schneider</h3>
-                <p>Portfolio Strategist</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Larry Feldman</h3>
-                <p>Investment Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Luke Gries</h3>
-                <p>Jr. Investment Analyst - AI Focus</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Jack Davis</h3>
-                <p>Jr. Investment Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Aidas Puskorius</h3>
-                <p>Jr. Investment Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Aditya Sagar</h3>
-                <p>Jr. Investment Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>James DeAngelis</h3>
-                <p>Principal Capital Markets</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Evan Fochios</h3>
-                <p>VP of Operations</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Ben Schultz</h3>
-                <p>Operations Associate</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Brandon Gaier</h3>
-                <p>Operations Manager</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Nathan Cespedes</h3>
-                <p>Operations Analyst</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Rick Rignola, CPA</h3>
-                <p>Controller</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Elena Zheng</h3>
-                <p>Business Development Associate</p>
-              </article>
-              <article class="team-member-card">
-                <h3>Brandon Kooser</h3>
-                <p>Chief of Staff</p>
-              </article>
+              </button>
+              <div class="org-chart-reports">
+                <button
+                  class="team-member-card bio-trigger"
+                  type="button"
+                  aria-haspopup="dialog"
+                  aria-controls="bio-kevin"
+                >
+                  <h3>Kevin S. Gahwyler, CFA</h3>
+                  <p>Managing Director</p>
+                </button>
+                <button
+                  class="team-member-card bio-trigger"
+                  type="button"
+                  aria-haspopup="dialog"
+                  aria-controls="bio-joe"
+                >
+                  <h3>Joseph Levy, CPA</h3>
+                  <p>Chief Operating &amp; Financial Officer, Chief Compliance Officer</p>
+                </button>
+              </div>
             </div>
           </div>
         </section>
+
+        <dialog class="bio-dialog" id="bio-vik" aria-labelledby="bio-vik-name" tabindex="-1">
+          <div class="bio-header">
+            <h2 id="bio-vik-name">Vikas Mittal, CFA</h2>
+            <p class="bio-role">Managing Member &amp; CIO</p>
+            <button class="bio-close" type="button">Exit</button>
+          </div>
+          <div class="bio-body">
+            <p>
+              Vik Mittal is the Founder, Managing Member and Chief Investment Officer of Meteora Capital, LLC.
+            </p>
+            <p>
+              Prior to founding Meteora Capital, Vik was an investment professional and Partner at Glazer
+              Capital Management from June 2005 through December 2021. As one of only two Portfolio Managers
+              during his tenure, Vik was responsible for identifying, evaluating and executing investments across
+              a broad range of event-driven and special situations strategies. His investment responsibilities
+              encompassed structured credit and equity, merger arbitrage, convertible securities, high-yield debt
+              and special purpose acquisition companies (SPACs), with a focus on opportunities across the capital
+              structure.
+            </p>
+            <p>
+              Prior to joining Glazer Capital, Vik worked in the Technology, Media and Telecommunications (TMT)
+              Investment Banking Group at Raymond James &amp; Associates from August 2002 to May 2005. Based in
+              Palo Alto, California, he served as an Analyst and Junior Associate, focusing on middle-market
+              mergers and acquisitions, private placements and capital-raising transactions.
+            </p>
+            <p>
+              Vik received his Master of Business Administration (MBA) from New York University's Leonard N. Stern
+              School of Business in 2012. He previously attended the University of Florida, completing his studies
+              in 2002.
+            </p>
+          </div>
+        </dialog>
+        <dialog class="bio-dialog" id="bio-kevin" aria-labelledby="bio-kevin-name" tabindex="-1">
+          <div class="bio-header">
+            <h2 id="bio-kevin-name">Kevin S. Gahwyler, CFA</h2>
+            <p class="bio-role">Managing Director</p>
+            <button class="bio-close" type="button">Exit</button>
+          </div>
+          <div class="bio-body">
+            <p>
+              Kevin S. Gahwyler, CFA, is Managing Director, Co-Chief Operating Officer and Director of
+              Business Development at Meteora Capital, LLC.
+            </p>
+            <p>
+              Prior to joining Meteora Capital, Kevin served as Chief Operating Officer and Director of
+              Business Development at Measure 8 Venture Partners from March 2019 to September 2021.
+              Prior to joining Measure 8, Kevin was President and Chief Financial Officer of Navy
+              Capital from May 2018 to January 2019, where he focused on investment management and
+              business operations.
+            </p>
+            <p>
+              Prior to joining Navy Capital, Kevin served as Chief Operating Officer and Director of
+              Business Development at Twin Capital Management from February 2010 to April 2018. During
+              his tenure, he oversaw business operations, investor relations and capital raising for the
+              firm's event-driven investment strategies, including merger arbitrage and special
+              situations.
+            </p>
+            <p>
+              Earlier in his career, Kevin held senior positions at KenCole Capital, CDG Holdings,
+              Pequot Capital and Sagamore Hill, with responsibilities spanning portfolio management,
+              business development, investor relations and capital raising.
+            </p>
+            <p>
+              Kevin received his Master of International Management in International Finance from
+              Thunderbird School of Global Management in 1993 and his Bachelor of Science in Biology
+              from Fairfield University in 1985. He holds the Chartered Financial Analyst (CFA)
+              designation.
+            </p>
+          </div>
+        </dialog>
+        <dialog class="bio-dialog" id="bio-joe" aria-labelledby="bio-joe-name" tabindex="-1">
+          <div class="bio-header">
+            <h2 id="bio-joe-name">Joseph Levy, CPA</h2>
+            <p class="bio-role">Chief Operating &amp; Financial Officer, Chief Compliance Officer</p>
+            <button class="bio-close" type="button">Exit</button>
+          </div>
+          <div class="bio-body">
+            <p>
+              Joe Levy is the Chief Operating and Financial Officer of Meteora Capital, LLC.
+            </p>
+            <p>
+              Prior to joining Meteora Capital, Joe served as Chief Financial Officer at Tegean Capital
+              Management from November 2015 to October 2021 and subsequently as Chief Compliance Officer
+              through August 2022. Previously, Joe was a Financial Planning and Analysis Manager at
+              Millennium Management from April 2012 to November 2015.
+            </p>
+            <p>
+              Prior to joining Millennium Management, Joe served as a Senior Analyst at Goldman Sachs
+              from January 2010 to April 2012. Earlier in his career, he worked as a Senior Associate at
+              KPMG from August 2007 to January 2010.
+            </p>
+            <p>
+              Joe received his Master of Business Administration (MBA) in Finance from New York
+              University's Leonard N. Stern School of Business in 2015 and his Bachelor of Science in
+              Business Administration in Accounting from the University of Pittsburgh in 2007.
+            </p>
+          </div>
+        </dialog>
       </main>
 
       <footer class="site-footer" id="contact">
@@ -195,6 +243,6 @@
       </footer>
     </div>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>
